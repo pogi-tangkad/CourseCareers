@@ -5,5 +5,43 @@
   <head>
     <title>Forms</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br />
+      <br />
+      <p>Enter your fave language</p>
+      <input type="radio" name="fave_language" value="HTML" id="HTML" />
+      <label for="html">HTML</label>
+      <input type="radio" name="fave_language" value="Java" id="Java" />
+      <label for="Java">Java</label>
+      <input type="radio" name="fave_language" value="Go" id="Go" />
+      <label for="Go">Go</label>
+      <p>Enter your second fave language</p>
+      <input type="checkbox" name="fave_language1" value="Python" id="Python" />
+      <label for="Python">Python</label>
+      <input
+        type="checkbox"
+        name="fave_language2"
+        value="Javascript"
+        id="Javascript"
+      />
+      <label for="Javascript">Javascript</label>
+      <input type="checkbox" name="fave_language3" value="React" id="React" />
+      <label for="React">React</label>
+      <br />
+      <br />
+      <input type="number" max="9" min="-4" name="number" />
+      <input type="date" name="date" />
+      <input type="file" name="file" />
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
 </html>

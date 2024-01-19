@@ -1,0 +1,39 @@
+.purple_almond {
+  font-size: 33px;
+  color: rebeccapurple;
+  background-color: blanchedalmond;
+}
+.pink_black {
+  color: pink;
+  background-color: rgb(0, 0, 0);
+}
+.black_thistle {
+  color: #000000;
+  background-color: thistle;
+}
+#hello-world {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+#grocery-list {
+  color: green;
+  background-color: magenta;
+  font-size: 18px;
+  width: 50%;
+  height: 10%;
+}
+#grocery-list li {
+  background-color: bisque;
+  width: 50%;
+}
+#todo-list {
+  color: darkred;
+  background-color: aquamarine;
+  font-size: 22px;
+  width: 80%;
+  height: min-content;
+}
+#todo-list li {
+  background-color: teal;
+  width: 30vw;
+}
