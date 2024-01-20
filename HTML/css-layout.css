@@ -1,0 +1,19 @@
+/* stylesheet for css-layout.html */
+
+.posts {
+  display: flex;
+  flex-direction: row; /* default is row */
+  background-color: aquamarine;
+  height: 290vh;
+}
+/* each flex amount is divided by total flexes value
+   to find the percentage each style occupies */
+.post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  align-items: flex-start;
+  height: 50vh;
+  justify-content: flex-end;
+}

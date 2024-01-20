@@ -1,0 +1,33 @@
+/* stylesheet for css-layout-2.html */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 250px;
+}
+
+.rect {
+  flex: 1;
+  border: 2px black solid;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}

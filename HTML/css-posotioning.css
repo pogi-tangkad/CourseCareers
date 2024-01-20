@@ -1,0 +1,75 @@
+/* style reference file for css-positioning.html */
+
+/* first <ul> section
+div {
+  background-color: aqua;
+relative position
+  position: relative;
+  left: 40px;
+  top: -10px;
+fixed - holds it in position as you scroll
+  position: fixed;
+  left: 40px;
+  top: -10px;
+absolute
+  position: absolute;
+  left: 40px;
+  top: 40px;
+*/
+/* for <div> circles section
+.container {
+  position: absolute;
+  top: 50px;
+  background-color: blueviolet;
+  height: 100px;
+  width: 90%;
+}
+
+.circle1 {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle2 {
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 25px;
+  z-index: 1;
+}
+*/
+
+/* for total page. comment out for other section use
+*/
+.container {
+  position: sticky;
+  background-color: blueviolet;
+  height: 100px;
+  width: 90%;
+  bottom: 0px;
+  top: 0px;
+}
+.circle1 {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle2 {
+  background-color: lightcoral;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 25px;
+  z-index: 1;
+}
