@@ -63,3 +63,10 @@ console.log(m, n);
 
 const example = !((5 % 2 == 1 && true == 1 && undefined != null) || 5 - 2 == 1);
 console.log(example);
+
+const s = false;
+const t = true;
+const u = false;
+const v = true;
+const final = (s && t) || (u && v) || s || (t && u);
+console.log("final: ", final);
