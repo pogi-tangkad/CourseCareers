@@ -10,7 +10,7 @@ let displayText = document.getElementById("practice2Display");
 displayText.style = "color: blue";
 displayText.innerHTML = `<marquee ${speed}>${title}</marquee><br>`;
 
-let clearCheck = false;
+let clearInput = false;
 
 function findLargest(arr1) {
   const largestNum = arr1.sort((a, b) => b - a);
@@ -24,14 +24,20 @@ function userSubmit() {
   const num3 = document.getElementById("userNum3").value;
   const result = findLargest([num1, num2, num3]);
   document.getElementById("answer").innerHTML = result;
-  clearCheck = true;
+  clearInput = true;
 }
 
 function clearEntries() {
-  if (clearCheck) {
+  if (clearInput) {
     document.getElementById("userNum1").value = null;
     document.getElementById("userNum2").value = null;
     document.getElementById("userNum3").value = null;
-    clearCheck = false;
+    clearInput = false;
+  }
+}
+
+function clearAnswer() {
+  if (!clearInput) {
+    document.getElementById("answer").innerHTML = "";
   }
 }
