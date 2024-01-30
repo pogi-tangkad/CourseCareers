@@ -1,0 +1,16 @@
+/* stylesheet for practice2.html */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  justify-content: start;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px;
+}

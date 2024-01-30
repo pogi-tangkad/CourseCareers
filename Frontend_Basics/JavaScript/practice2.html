@@ -1,0 +1,50 @@
+<!-- Author: Pogi Tangkad -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Practice #2</title>
+    <link rel="stylesheet" href="./practice2.css" />
+  </head>
+  <body>
+    <p id="practice2Display"></p>
+    <p>
+        <div class="container">
+            <div class="column">
+      <label for="userNum1">Please enter first number: </label>
+      <br>
+      <label for="userNum2">Please enter second number:</label>
+      <br>
+      <label for="userNum3">Please enter third number:</label>
+      <br>
+      <button
+        id="userButton"
+        type="submit"
+        form="userForm"
+        onclick="userSubmit()"
+      >
+        Submit
+      </button>
+    </div>
+    <div class="column">
+        <input type="number" id="userNum1" onclick="clearEntries()" />
+        <br>
+      <input type="number" id="userNum2" onclick="clearEntries()" />
+      <br>
+      <input type="number" id="userNum3" onclick="clearEntries()" />
+    </div>
+        </div>
+<div class="container">
+  <div class="column">
+    <span>The largest number you entered is: </span>
+  </div>
+  <div class="column">
+    <span id="answer"></span>
+  </div>
+</div>
+
+    </p>
+
+    <script src="./practice2.js"></script>
+  </body>
+</html>
