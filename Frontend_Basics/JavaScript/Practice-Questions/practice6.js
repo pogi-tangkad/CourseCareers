@@ -20,11 +20,12 @@ function friends(peeps) {
 }
 
 const people = [
+  { name: "Maganda", friends: ["Pogi"] },
   { name: "Pogi", friends: ["Mike", "Tim", "Sally", "John"] },
   { name: "Tim", friends: ["John", "Sally", "Pogi"] },
-  { name: "John", friends: ["Tim", "Mike"] },
+  { name: "John", friends: ["Tim", "Mike", "Pogi"] },
   { name: "Mike", friends: ["Pogi"] },
-  { name: "Sally", friends: ["Tim"] },
+  { name: "Sally", friends: ["Tim", "Pogi"] },
 ];
 
 const mostLoyal = friends(people);
