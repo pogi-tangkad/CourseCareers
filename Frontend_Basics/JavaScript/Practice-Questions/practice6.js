@@ -16,8 +16,7 @@ function friends(peeps) {
   }
 
   peeps.sort((a, b) => b.loyal - a.loyal);
-  console.log(peeps[0].name + ", has the most loyal friends.");
-  //return mostLoyal;
+  return peeps[0].name;
 }
 
 const people = [
@@ -28,4 +27,6 @@ const people = [
   { name: "Sally", friends: ["Tim"] },
 ];
 
-friends(people);
+const mostLoyal = friends(people);
+
+console.log(mostLoyal, ", has the most loyal friends.");
