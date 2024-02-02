@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Random Password Generator</title>
+    <link rel="stylesheet" href="random-pwd-generator.css" />
+  </head>
+  <body>
+    <div class="generator-container">
+      <h2>Password Generator</h2>
+      <form>
+        <h4>Select attributes for password</h4>
+        <label for="length">Length: </label>
+        <input type="number" id="length" name="length" />
+        <br />
+        <input type="checkbox" id="uppers" name="uppers" />
+        <label for="uppers">Uppercase Letters</label>
+        <br />
+        <input type="checkbox" id="lowers" name="lowers" />
+        <label for="lowers">Lowercase Letters</label>
+        <br />
+        <input type="checkbox" id="specials" name="specials" />
+        <label for="specials">Special Characters</label>
+        <br />
+        <input type="checkbox" id="numbers" name="numbers" />
+        <label for="numbers">Numbers</label>
+        <br />
+        <br />
+        <button type="button" onclick="pwdGenerate()">Generate</button>
+      </form>
+    </div>
+    <div class="pwd-container">
+      <span id="pwd-display"></span>
+    </div>
+    <script src="random-pwd-generator.js"></script>
+  </body>
+</html>

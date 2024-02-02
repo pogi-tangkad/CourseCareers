@@ -1,0 +1,12 @@
+.generator-container {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: start;
+}
+
+.pwd-container {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: start;
+  padding: 20px;
+}
