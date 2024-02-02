@@ -3,10 +3,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>JavaScript ToDo List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Mini Poject: ToDo List</title>
+    <link rel="stylesheet" href="todo-list.css" />
   </head>
   <body>
-    <p></p>
-    <script src="./todo-list.js"></script>
+    <div class="list-container">
+      <h2>My ToDo List</h2>
+      <ul id="list"></ul>
+      <form>
+        <label for="new-todo">New Item</label>
+        <input
+          type="text"
+          id="new-todo"
+          name="new-todo"
+          onkeydown="if (event.keyCode == 13) {addTodo(); return false}"
+        />
+        <button type="button" onclick="addTodo()">Create</button>
+      </form>
+    </div>
+    <script src="todo-list.js"></script>
   </body>
 </html>
