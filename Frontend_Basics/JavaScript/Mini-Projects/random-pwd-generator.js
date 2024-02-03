@@ -17,6 +17,11 @@ function pwdGenerate() {
   const pwdSpecial = document.getElementById("specials").checked;
   const pwdNumber = document.getElementById("numbers").checked;
 
+  if (pwdLength < 4) {
+    alert("Correction required:\nPassword length must be at least 4!");
+    return;
+  }
+
   let totalOptions = 0;
   if (pwdUpper) {
     totalOptions += 1;
