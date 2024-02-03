@@ -1,0 +1,50 @@
+.calc-container {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  height: 80vh;
+  max-height: 80vh;
+}
+
+.calc-table {
+  display: fixed;
+  table-layout: fixed;
+  border: 2px solid black;
+  width: fit-content;
+  max-height: 80vh;
+  border-radius: 2px;
+  border-spacing: 10px;
+}
+
+.calc-display {
+  display: block;
+  height: 150px;
+  max-height: 150px;
+  width: 200px;
+  max-width: 200px;
+  font-size: 20px;
+  overflow: scroll;
+  overflow-anchor: bottom;
+  text-align: right;
+  direction: ltr;
+  border: 1px solid darkslategrey;
+  padding: 5px;
+  margin-right: -25px;
+}
+
+.func-button {
+  font-weight: bold;
+  background-color: lightgrey;
+}
+
+.func-button,
+.num-button,
+.enter-button,
+.cls-button {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid darkslategrey;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}

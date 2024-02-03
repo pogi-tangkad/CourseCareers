@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calc-container">
+    <table class="calc-table">
+        <tr class="display-row">
+          <td class="calc-display" id="calc-display" colspan="4"></td>
+        </tr>
+        <tr>
+          <tr>
+            <td class="func-button" onclick="operation('*')">*</td>
+            <td class="func-button" onclick="operation('/')">/</td>
+            <td class="func-button" onclick="operation('+')">+</td>
+            <td class="func-button" onclick="operation('-')">-</td>
+          </tr>
+          <tr>
+            <td class="num-button" onclick="numValue(7)">7</td>
+            <td class="num-button" onclick="numValue(8)">8</td>
+            <td class="num-button" onclick="numValue(9)">9</td>
+            <td class="enter-button" onclick="calcEnter()" rowspan="3">Enter</td>
+          </tr>
+          <tr>
+            <td class="num-button" onclick="numValue(4)">4</td>
+            <td class="num-button" onclick="numValue(5)">5</td>
+            <td class="num-button" onclick="numValue(6)">6</td>
+          </tr>
+          <tr>
+            <td class="num-button" onclick="numValue(1)">1</td>
+            <td class="num-button" onclick="numValue(2)">2</td>
+            <td class="num-button" onclick="numValue(3)">3</td>
+          </tr>
+          <tr>
+            <td class="num-button" onclick="numValue(0)" colspan="2">0</td>
+            <td class="num-button" onclick="decimal()">.</td>
+            <td class="cls-button" onclick="clearDisplay()">clear</td>
+          </tr>
+        </tr>
+    </table>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
