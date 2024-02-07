@@ -1,6 +1,6 @@
-var calcDisplay = document.getElementById("calc-display");
-calcDisplay.style = "color: black";
+let calcDisplay = document.getElementById("calc-display");
 calcDisplay.style = "cell";
+calcDisplay.style = "color:black";
 let currentTotal = null;
 let nextValue = null;
 let pendingOperand = null;
@@ -40,7 +40,7 @@ function updateCalc() {
         break;
     }
     calcDisplay.innerText += "\n";
-    calcDisplay.innerText += "-------------------";
+    calcDisplay.innerText += "===========";
     calcDisplay.innerText += "\n";
     calcDisplay.innerText += currentTotal;
     console.log(currentTotal);
@@ -53,7 +53,7 @@ function numValue(num) {
   if (finalOutput) {
     resetCalc();
     calcDisplay.innerText += "\n";
-    calcDisplay.innerText += "-------------------";
+    calcDisplay.innerText += "------------------";
     calcDisplay.innerText += "\n";
     finalOutput = false;
   }
@@ -78,6 +78,7 @@ function numValue(num) {
   console.log(nextValue);
   calcDisplay.innerText += num;
   calcDisplay.scrollTop = calcDisplay.scrollHeight;
+  calcDisplay.scrollLeft = calcDisplay.scrollWidth;
 }
 
 function operation(operand) {
@@ -104,6 +105,9 @@ function calcEnter() {
 }
 
 function decimal() {
+  if (startDecimal) {
+    return;
+  }
   calcDisplay.innerText += ".";
   startDecimal = true;
 }
