@@ -24,3 +24,12 @@ console.log(person, person2);
 
 person.sayHi(false);
 person2.sayHi(true);
+
+const person3 = new Person();
+
+console.log(person3);
+
+person3.name = "Winter";
+person3.age = 4;
+
+person3.sayHi();
